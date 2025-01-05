@@ -7,7 +7,7 @@ plugins {
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 
-sourceCompatibility = JavaVersion.VERSION_21
+
 
 repositories {
     mavenCentral()
@@ -17,6 +17,7 @@ dependencies {
     implementation 'org.flywaydb:flyway-core:9.22.3'
     implementation 'org.postgresql:postgresql:42.7.2'
     implementation 'com.amazonaws:aws-lambda-java-core:1.2.3'
+    implementation 'com.amazonaws:aws-java-sdk-rds:1.12.666'
     implementation 'software.amazon.jdbc:aws-advanced-jdbc-wrapper:2.3.0'
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
